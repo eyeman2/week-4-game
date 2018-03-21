@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Match Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <div>
+        <h1>Game Name</h1>
+
+        <p>You will be given a random number at the start of the game.</p>
+        
+        <p>There are four consoles below.  By clicking on a console you will add a specific amount of points ot your total score</p>
+        
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
+        
+        <p>The value of each console is hidden from you until you click on it.</p>
+        
+        <p>Each time when a game starts, the game will change the values of each console</p>
+    </div>
+    <div id="target">
+        sidebar left: Match number
+    </div>
+    <div id="userScore">
+        sidebar right
+    </div>
+    <div>
+        dragon ball
+    </div>
+    <div>
+        score
+    </div>
+    <div>
+        <img class="consoles" id="xbox" src="assets/images/xbox3.jpg" alt="xbox">
+        <img id="ps4" src="assets/images/ps4.jpg" alt="ps4">
+        <img id="switch" src="assets/images/Nintendo-Switch.jpg" alt="switch">
+        <img id="pc" src="assets/images/pc.jpg" alt="pc">
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+    <script type="text/javascript"> //src="assets/javascript/game.js"
+
+    var wins = 0;
+    var losses = 0;
+    var userTotal = 0;
+ 
+    
+    var xbox = Math.floor(Math.random() * 12) +1;
+    var ps4 = Math.floor(Math.random() * 12) +1;
+    var nintendo = Math.floor(Math.random() * 12) +1;
+    var pc = Math.floor(Math.random() * 12) +1;
+    console.log(xbox);
+    console.log(ps4);
+    console.log(nintendo);
+    console.log(pc);
+
+    var targetNumber = Math.floor(Math.random() * 120) + 19;
+    console.log(targetNumber);
+    $("#target").text(targetNumber);
+
+  var newRound = function () {
+
+   
+
+        $("#xbox").click(userTotal) 
+            userTotal = userTotal + xbox;
+            $("#userScore").text(userTotal)
+            console.log(userTotal);
+        
+
+        $("#ps4").click(function() {
+            userTotal = userTotal + ps4;
+            $("#userScore").text(userTotal)
+        })
+
+        $("#switch").click(function() {
+            userTotal = userTotal + nintendo;
+            $("#userScore").text(userTotal)
+       })
+
+        $("#pc").click(function() {
+            userTotal = userTotal + pc;
+            $("#userScore").text(userTotal)
+        })
+    }
+        
+        // var calculations = function() {
+    var compare = function() {
+
+        if(userScore > randomNum){
+            alert("Sorry, you lost.");
+            losses = losses + 1
+            $("#losses").text(losses);
+            newRound();
+            
+        }
+        if (userScore === randomNum){
+            alert("WINNER!");
+            wins = wins + 1
+            $("#wins").text(wins);
+            newrRound();
+        }	        
+
+    // if (userTotal === targetNumber) {
+    //     wins ++;
+    //     alert("You win");
+    //     restart ();
+    // }
+    // if (userTotal += targetNumber) {
+    //     losses ++;
+    //     alert("You lose");
+    //     restart();
+    // }
+
+    // if ((wins = 5) || (losses = 5)) {
+    //     wins = 0;
+    //     losses = 0;
+    //     restart();
+    // }
+}
+
+
+    </script>
+</body>
+</html>

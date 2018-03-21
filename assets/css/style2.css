@@ -1,0 +1,97 @@
+body{
+    background-image: url("https://images7.alphacoders.com/633/633262.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 1280px;
+   
+}
+
+h1{
+    font-weight: bolder;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: mediumblue;
+    text-align: center;
+    margin: 10px;
+}
+
+
+#rules{
+    float: left;;
+    top: 10px;
+    margin-left: 20px;
+    margin-top: 23%;
+    width: 300px;
+    height: 400px;
+    font-size: 20px;
+    line-height: 25px;
+    
+}
+
+#target{
+    position: relative;
+    bottom: 430px;
+    left: 370px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    padding-top: 90px;
+   color: darkviolet;
+}
+
+
+#userScore{
+    position: relative;
+    bottom: 50px;
+    left: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: darkviolet;
+    float: right;
+    
+
+}
+
+
+#consoles{
+    position: fixed;
+    bottom: 0px;
+    left: 28%;
+    align-items: center;
+    margin: 10px;
+}
+
+.console-img{
+    height: 200px;
+    width: 200px;
+   
+}
+
+#wins-losses{
+    position: relative;
+    bottom: 580px;
+    left: 1600px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100px;
+}
+
+
+#gif{
+    position: absolute;
+    right: 720px;
+    top: 32%;
+    height: 430px;
+    width: 500px;
+    
+}

@@ -1,0 +1,161 @@
+/* body{
+    background: rebeccapurple;
+    
+
+} */
+
+h1{
+    font-weight: bolder;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: mediumblue;
+    text-align: center;
+    margin: 10px;
+}
+
+/* p{
+  
+    align-items: center;
+    color: indigo;
+    font-size: 50px;
+    line-height: 50px;
+} */
+
+/* img{
+    width: 230px;
+    height: 200px;
+    position: relative;
+    left: 10%;
+   
+} */
+
+#rules{
+    width: 700px;
+    height: 250px;
+    background-color: goldenrod;
+    margin: auto;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+/* .image{
+    margin-top: 80px;
+    opacity: .5;
+} */
+
+
+#target{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 300px;
+   color: darkviolet;
+    margin-top: 30px;    
+}
+
+#targetBox {
+    height: 330px;
+    background-color: mediumaquamarine;
+    padding-top: 100px;
+    /* float: right; */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* #points{
+    height: 350px;
+    width: 200px;
+    background-color: mediumaquamarine;
+    text-align: center;
+    padding-top: 100px;
+    float: right;
+    margin-right: 100px;
+    margin-right: 20px;
+} */
+
+#userScore{
+    position: relative;
+    bottom: 79px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    /* text-align: left; */
+    padding-left: 300px;
+    padding-top: 0px;
+    color: darkviolet;
+    /* margin-top: 30px;  */
+
+}
+
+/* #userBox{
+    background-color: rgb(174, 187, 57);
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 300px;
+} */
+/* img{
+    display: inline-block;
+    position: relative;
+    bottom: 10%; */
+   
+
+#consoles{
+    position: relative;
+    top: 10px;
+    left: 30%;
+    /* align-items: center; */
+    /* margin: auto; */
+}
+
+.console-img{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+
+}
+
+#wins-losses{
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#header1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 200px;
+}
+
+#header2 {
+    position: relative;
+    bottom: 110px;
+    left: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: left;
+    /* padding-right: 200px;
+    margin-top: 20px; */
+     
+}
+
+#gif{
+    position: absolute;
+    right: 720px;
+    top: 32%;
+    height: 430px;
+    width: 500px;
+    background: darkslategray
+
+}
