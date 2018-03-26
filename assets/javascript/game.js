@@ -15,13 +15,7 @@ var startGame = function () {
   $("#target").text(targetNumber);
 
   score = 0;
-  var createConsoleScores = function(array) {
-    array.length = 0;
-    for (i = 0; i < 4; i++) {
-      array.push(Math.floor(Math.random() * 12) +1);   
-      // console.log(consoleScores) 
-    }
-  };
+  
 
   $("#userScore").text(score);
 };
@@ -32,11 +26,17 @@ startGame();
 
 $("#wins-losses").html("<p>Wins:    " + wins + "</p>" + "<p>Losses:    " + losses + "</p>");
 
-
+var createConsoleScores = function(array) {
+  array.length = 0;
+  for (i = 0; i < 4; i++) {
+    array.push(Math.floor(Math.random() * 12) +1);   
+    // console.log(consoleScores) 
+  }
+};
 
 var setConsoleValues = function(array) {
   
-  $(".console-img").each(function(i) {
+  $(".console-img").each(function (i) {
   
 
   });
@@ -90,7 +90,7 @@ $("#gif").empty();
   }
   
   else if(score > targetNumber) {
-    alert("You've been defeated");
+    alert("You're Such a Jerry");
         
     losses += 1;
     
@@ -109,8 +109,7 @@ $("#gif").empty();
     wins = 0;
     losses = 0;
     startGame();
-    createConsoleScores(randomNumbers);
-  setConsoleValues(randomNumbers);
+ 
     $("#wins-losses").html('<p>Wins: ' + wins + '</p>' +       '<p>Losses: ' + losses + '</p>');
   }
 

@@ -1,8 +1,8 @@
-/* body{
+body{
     background: rebeccapurple;
-    
+    background-size: cover;
 
-} */
+}
 
 h1{
     font-weight: bolder;
@@ -157,5 +157,4 @@ p{
     height: 430px;
     width: 500px;
     background: darkslategray
-
 }
